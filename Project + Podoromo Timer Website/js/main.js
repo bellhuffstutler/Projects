@@ -18,31 +18,17 @@ function podoromoFocusTimer(){
             clearInterval(timer);
             document.getElementById('end').innerHTML = "BREAK TIME !!"
             if (podoromoTimerCount > 3) {
-                podoromoRestTimerFour();
+                podoromoRestTimer(podoromoRestTimeFour);
             } else {
-                podoromoRestTimer();
+                podoromoRestTimer(podoromoRestTime);
             }
 
         }
     }, 1000);
 }
 
-function podoromoRestTimer(){
-    var sec = podoromoRestTime;
-
-    var timer = setInterval(function(){
-        document.getElementById('seconds').innerHTML= sec + "sec";
-        sec--;
-        if (sec < 0) {
-            clearInterval(timer);
-            document.getElementById('end').innerHTML= 'TIME TO MAKE DA BACON !!'
-            document.getElementById('timerButton').disabled = false
-        }
-    }, 1000);
-}
-
-function podoromoRestTimerFour(){
-    var sec = podoromoRestTimeFour;
+function podoromoRestTimer(restTime){
+    var sec = restTime;
 
     var timer = setInterval(function(){
         document.getElementById('seconds').innerHTML= sec + "sec";
