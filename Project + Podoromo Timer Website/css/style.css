@@ -1,0 +1,81 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  display: flex;
+  flex-direction: column;
+  background: #121212;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+main {
+  width: 75%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 8%);
+}
+
+header {
+  border: 2px solid rgba(255, 255, 255, 6%);
+  height: 10vh;
+  background: rgba(255, 255, 255, 6%);
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 6%);
+  height: 70vh;
+  text-align: center;
+  background: rgba(255, 255, 255, 12%);
+}
+
+.timer, .project {
+  flex: 1;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.timer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 4rem; 
+  font-weight: 500;
+}
+
+.project {
+  flex: 2;
+  background:rgba(255, 255, 255, 18%);
+}
+
+aside {
+  border: 2px solid rgba(255, 255, 255, 6%);
+  height: 70vh;
+  flex: 0.75;
+  background: rgba(255, 255, 255, 12%);
+}
+
+footer {
+  border: 2px solid rgba(255, 255, 255, 6%);
+  height: 20vh;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
