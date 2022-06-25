@@ -1,0 +1,14 @@
+body {
+    width: 50%;
+    margin: 0 auto;
+    word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    background: #121212;
+    color: #FFF;
+}
+
+#eight {
+    color: red;
+    font-size: larger;
+}
