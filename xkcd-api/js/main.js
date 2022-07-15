@@ -53,3 +53,4 @@ function collapseTranscript() {
 
 document.querySelector('#randomComic').addEventListener('click', randomComic)
 collapse.addEventListener('click', collapseTranscript)
+randomComic();
