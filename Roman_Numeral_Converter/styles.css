@@ -39,6 +39,7 @@ h1 {
 }
 
 .convert-btn {
+  display: flex;
   background-color: var(--orange);
   cursor: pointer;
   border: none;
@@ -46,10 +47,12 @@ h1 {
 }
 
 .number {
+  display: flex;
   height: 25px;
 }
 
 #output {
+  display: flex;
   margin: 10px 0;
   min-width: 200px;
   width: fit-content;
@@ -59,14 +62,4 @@ h1 {
   border: 5px solid var(--orange);
   font-size: 2rem;
   text-align: center;
-}
-
-@media screen and (min-width: 500px) {
-  .input-container {
-    flex-direction: row;
-  }
-
-  #result {
-    max-width: 460px;
-  }
 }
